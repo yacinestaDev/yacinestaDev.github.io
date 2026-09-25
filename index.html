@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacine Ghrissi | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+        
+        html[lang="ar"] { font-family: 'Cairo', sans-serif; }
+        html[lang="en"] { font-family: 'Poppins', sans-serif; }
+        
+        html[lang="ar"] .en { display: none !important; }
+        html[lang="en"] .ar { display: none !important; }
+        
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tight text-blue-600">
+                    <span class="ar">ياسين غريسي</span>
+                    <span class="en">Yacine Ghrissi</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="toggleLanguage()" class="px-4 py-2 rounded-md bg-gray-100 hover:bg-gray-200 font-semibold transition-colors">
+                        <span class="ar">English</span>
+                        <span class="en">العربية</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="ar">مرحباً، أنا <span class="gradient-text">ياسين غريسي</span></span>
+                <span class="en">Hi, I'm <span class="gradient-text">Yacine Ghrissi</span></span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                <span class="ar">مهندس إعلام آلي | مطور فلاتر (Flutter) | مدير مشاريع</span>
+                <span class="en">Computer Engineer | Flutter Developer | Project Manager</span>
+            </p>
+            <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                <span class="ar">أكثر من 4 سنوات من الخبرة في تطوير تطبيقات الهواتف المحمولة وتطبيقات الويب، وإدارة الفرق التقنية لتطوير حلول رقمية مبتكرة تلبي احتياجات السوق.</span>
+                <span class="en">Over 4 years of experience in mobile and web application development, and leading technical teams to create innovative digital solutions tailored to market needs.</span>
+            </p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#contact" class="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">
+                    <span class="ar">تواصل معي</span>
+                    <span class="en">Contact Me</span>
+                </a>
+                <a href="My CV.pdf" target="_blank" class="px-8 py-3 bg-white text-blue-600 border border-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-sm flex items-center gap-2">
+                    <i class="fas fa-file-pdf"></i>
+                    <span class="ar">عرض السيرة الذاتية (CV)</span>
+                    <span class="en">View CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white" id="about">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">
+                    <span class="ar">نبذة عني</span>
+                    <span class="en">About Me</span>
+                </h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Developer Workspace" class="rounded-xl shadow-xl">
+                </div>
+                <div class="text-lg text-gray-600 leading-relaxed space-y-4">
+                    <p class="ar">أنا مطور فلاتر ومدير مشاريع أعمل حالياً في شركة Hoskadev. أتخصص في تحليل المتطلبات، تصميم واجهات المستخدم (UI/UX)، تحسين الأداء، والإشراف التقني الشامل على المشاريع.</p>
+                    <p class="ar">لدي خبرة واسعة في استخدام Flutter, Firebase, REST APIs وأدوات إدارة الحالة مثل GetX و BLoC و Provider. أحمل شهادة الماستر في الأنظمة الموزعة والذكاء الاصطناعي من جامعة الشهيد حمه لخضر بالوادي.</p>
+                    
+                    <p class="en">I am a Flutter developer and project manager currently working at Hoskadev. I specialize in requirement analysis, UI/UX design, performance optimization, and comprehensive project supervision.</p>
+                    <p class="en">I have extensive expertise in Flutter, Firebase, REST APIs, and state management tools like GetX, BLoC, and Provider. I hold a Master's degree in Distributed Systems and Artificial Intelligence from Echahid Hamma Lakhdar University, El Oued.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-50" id="skills">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">
+                    <span class="ar">المهارات التقنية</span>
+                    <span class="en">Technical Skills</span>
+                </h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-brands fa-flutter text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">Flutter & Dart</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-brands fa-java text-4xl text-red-500 mb-4"></i>
+                    <h3 class="font-bold">Java / Kotlin / Swift</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-solid fa-fire text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="font-bold">Firebase & Cloud APIs</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-solid fa-sitemap text-4xl text-green-500 mb-4"></i>
+                    <h3 class="font-bold">GetX & BLoC Pattern</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-brands fa-php text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold">PHP & Python</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-solid fa-server text-4xl text-gray-700 mb-4"></i>
+                    <h3 class="font-bold">RESTful APIs</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-solid fa-list-check text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="font-bold ar">إدارة المشاريع</h3>
+                    <h3 class="font-bold en">Project Management</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all">
+                    <i class="fa-solid fa-pen-nib text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="font-bold">UI / UX Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16 bg-white" id="projects">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <!-- Developed Apps -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">
+                    <span class="ar">تطبيقات أنجزتها</span>
+                    <span class="en">Developed Applications</span>
+                </h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- App 1: Winek VTC -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-600">Winek VTC</h3>
+                        <p class="text-gray-600 mb-4 text-sm h-28 overflow-hidden">
+                            <span class="ar">تطبيق متكامل لخدمات النقل وحجز سيارات الأجرة. يتميز بنظام متقدم لتتبع مسارات وإحداثيات السائقين بشكل مباشر لضمان أفضل تجربة للمستخدم.</span>
+                            <span class="en">An integrated VTC and ride-hailing app featuring precise real-time driver coordinate tracking and routing for an optimal user experience.</span>
+                        </p>
+                        <a href="https://play.google.com/store/search?q=winek+vtc&c=apps&hl=ar" target="_blank" class="text-blue-500 hover:underline text-sm font-semibold">
+                            <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 2: Echela -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-600">Echela (الشيلة)</h3>
+                        <p class="text-gray-600 mb-4 text-sm h-28 overflow-hidden">
+                            <span class="ar">تطبيق متخصص في خدمات النقل واللوجستيات. مصمم بآلية عمل مختلفة حيث لا يعتمد على تتبع إحداثيات السائقين، مما يوفر تجربة مخصصة لبيئة العمل.</span>
+                            <span class="en">A specialized transport and logistics app designed with a unique operational model that does not track driver coordinates, offering a tailored workflow.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.hoska.echela&hl=ar" target="_blank" class="text-blue-500 hover:underline text-sm font-semibold">
+                            <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 3: GROLINE -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-600">GROLINE</h3>
+                        <p class="text-gray-600 mb-4 text-sm h-28 overflow-hidden">
+                            <span class="ar">منصة إلكترونية شاملة للتسوق وتلبية الاحتياجات اليومية، تشمل الإلكترونيات وأدوات البناء والترصيص، مع خدمة توصيل ونظام عروض متكامل.</span>
+                            <span class="en">Comprehensive e-commerce platform for daily needs, electronics, and hardware, featuring order management, delivery logistics, and promotions.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.groline&hl=ar" target="_blank" class="text-blue-500 hover:underline text-sm font-semibold">
+                            <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 4: FreshDz -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-600">FreshDz</h3>
+                        <p class="text-gray-600 mb-4 text-sm h-28 overflow-hidden">
+                            <span class="ar">نسخة نظام iOS المخصصة للتجارة الإلكترونية، توفر تجربة مستخدم سلسة وعملية للمستخدمين على أجهزة أبل.</span>
+                            <span class="en">The iOS version for e-commerce, offering a seamless native shopping experience for Apple device users.</span>
+                        </p>
+                        <a href="https://apps.apple.com/dz/app/fresh-dz-%D9%81%D8%B1%D8%A7%D8%B4-%D8%AF%D9%8A%D8%B2%D8%A7%D8%AF/id6744602129" target="_blank" class="text-blue-500 hover:underline text-sm font-semibold">
+                            <i class="fa-brands fa-apple"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 5: Maurizon -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-600">Maurizon</h3>
+                        <p class="text-gray-600 mb-4 text-sm h-28 overflow-hidden">
+                            <span class="ar">تطبيق تسوق إلكتروني متكامل يقدم خدمات البيع والشراء بواجهة عملية وسهلة الاستخدام.</span>
+                            <span class="en">An integrated online shopping application providing seamless buying and selling experiences.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.mauritania.shop&hl=ar" target="_blank" class="text-blue-500 hover:underline text-sm font-semibold">
+                            <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 6: Hariri App -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-600">Hariri App</h3>
+                        <p class="text-gray-600 mb-4 text-sm h-28 overflow-hidden">
+                            <span class="ar">تطبيق تفاعلي مصمم لتسهيل الخدمات المخصصة للمستخدمين بأداء عالٍ وتصميم متجاوب.</span>
+                            <span class="en">An interactive application designed to facilitate dedicated user services with high performance and responsive design.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.hariri.app&hl=ar" target="_blank" class="text-blue-500 hover:underline text-sm font-semibold">
+                            <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maintained Apps -->
+            <div class="text-center mb-12 mt-20">
+                <h2 class="text-3xl font-bold mb-2">
+                    <span class="ar">تطبيقات أشرفت على صيانتها ودعمها تقنياً</span>
+                    <span class="en">Apps I Maintained & Supported</span>
+                </h2>
+                <div class="w-16 h-1 bg-green-600 mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- M App 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="bg-green-100 p-3 rounded-lg text-green-600 text-xl"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Nadjiib (نجيب)</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            <span class="ar">تطبيق تعليمي مبتكر لطلاب المراحل الثلاث (ابتدائي، متوسط، ثانوي) يقدم دورات تفاعلية ومميزات لتعزيز الاستفادة التعليمية.</span>
+                            <span class="en">Innovative educational app for primary, middle, and high school students offering interactive courses and features.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.najiibcom.najiib&hl=ar" target="_blank" class="text-blue-500 text-sm font-semibold"><i class="fa-brands fa-google-play"></i> الرابط</a>
+                    </div>
+                </div>
+
+                <!-- M App 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-600 text-xl"><i class="fas fa-stethoscope"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Labbaass (لباس)</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            <span class="ar">تطبيق طبي لحجز المواعيد في العيادات، يسهل التواصل بين المرضى والأطباء وفق أعلى معايير الخصوصية.</span>
+                            <span class="en">Medical application for clinic appointment booking, facilitating communication between patients and doctors securely.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.hoska.labbaass&hl=ar" target="_blank" class="text-blue-500 text-sm font-semibold"><i class="fa-brands fa-google-play"></i> الرابط</a>
+                    </div>
+                </div>
+
+                <!-- M App 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="bg-yellow-100 p-3 rounded-lg text-yellow-600 text-xl"><i class="fas fa-seedling"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Agropole</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            <span class="ar">منصة رقمية تربط أطراف سلسلة التوريد (مزارعين، مصانع، تجار، مواطنين) لتسهيل شراء وتوزيع المنتجات وإدارة الطلبات بديهياً.</span>
+                            <span class="en">Digital platform connecting the supply chain (farmers, factories, merchants) to facilitate local trade and order management.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.agropole.agropole&hl=ar" target="_blank" class="text-blue-500 text-sm font-semibold"><i class="fa-brands fa-google-play"></i> الرابط</a>
+                    </div>
+                </div>
+
+                <!-- M App 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="bg-purple-100 p-3 rounded-lg text-purple-600 text-xl"><i class="fas fa-car-side"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Cara (كارا)</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            <span class="ar">تطبيق لحجز مواعيد غسيل السيارات المتنقل في السعودية بخطوات بسيطة (خريطة، وقت، نوع الغسيل، دفع إلكتروني).</span>
+                            <span class="en">Mobile car wash booking app in Saudi Arabia featuring map localization, scheduling, and integrated payment gateways.</span>
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.hoskateam.cara&hl=ar" target="_blank" class="text-blue-500 text-sm font-semibold"><i class="fa-brands fa-google-play"></i> الرابط</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-gray-900 text-white" id="contact">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">
+                    <span class="ar">تواصل معي</span>
+                    <span class="en">Get In Touch</span>
+                </h2>
+                <div class="w-16 h-1 bg-blue-500 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-400">
+                    <span class="ar">هل لديك مشروع أو فرصة عمل؟ أنا جاهز لتحويل أفكارك إلى واقع رقمي.</span>
+                    <span class="en">Have a project or job opportunity? I'm ready to turn your ideas into digital reality.</span>
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8">
+                <a href="https://wa.me/213542288040?s=t" target="_blank" class="flex flex-col items-center p-6 bg-gray-800 rounded-xl hover:bg-green-600 transition-colors w-48 text-center">
+                    <i class="fa-brands fa-whatsapp text-4xl mb-4 text-green-500 bg-transparent"></i>
+                    <h4 class="font-bold mb-1">WhatsApp</h4>
+                    <span class="text-sm text-gray-300 dir-ltr">+213 542 28 80 40</span>
+                </a>
+
+                <a href="tel:+213696365741" class="flex flex-col items-center p-6 bg-gray-800 rounded-xl hover:bg-blue-600 transition-colors w-48 text-center">
+                    <i class="fa-solid fa-phone text-4xl mb-4 text-blue-400"></i>
+                    <h4 class="font-bold mb-1">Phone</h4>
+                    <span class="text-sm text-gray-300 dir-ltr">+213 696 36 57 41</span>
+                </a>
+
+                <a href="mailto:yacine.ghrissi@gmail.com" class="flex flex-col items-center p-6 bg-gray-800 rounded-xl hover:bg-red-500 transition-colors w-48 text-center">
+                    <i class="fa-solid fa-envelope text-4xl mb-4 text-red-400"></i>
+                    <h4 class="font-bold mb-1">Email</h4>
+                    <span class="text-sm text-gray-300 text-xs">yacine.ghrissi@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/yacine-ghrissi-ba5290365" target="_blank" class="flex flex-col items-center p-6 bg-gray-800 rounded-xl hover:bg-blue-700 transition-colors w-48 text-center">
+                    <i class="fa-brands fa-linkedin text-4xl mb-4 text-blue-500"></i>
+                    <h4 class="font-bold mb-1">LinkedIn</h4>
+                    <span class="text-sm text-gray-300">Yacine Ghrissi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 text-center text-gray-500 text-sm">
+        <p>
+            &copy; <span id="year"></span> 
+            <span class="ar">ياسين غريسي. جميع الحقوق محفوظة.</span>
+            <span class="en">Yacine Ghrissi. All rights reserved.</span>
+        </p>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Language Toggle Logic
+        function toggleLanguage() {
+            const htmlTag = document.documentElement;
+            if (htmlTag.lang === 'ar') {
+                htmlTag.lang = 'en';
+                htmlTag.dir = 'ltr';
+            } else {
+                htmlTag.lang = 'ar';
+                htmlTag.dir = 'rtl';
+            }
+        }
+    </script>
+</body>
+</html>
