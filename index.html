@@ -59,24 +59,24 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 dark:bg-darkbg text-gray-800 dark:text-gray-100 transition-colors duration-500">
+<body class="bg-gray-50 dark:bg-darkbg text-gray-800 dark:text-gray-100 transition-colors duration-500 overflow-x-hidden">
 
     <!-- Navigation -->
     <nav class="bg-white/80 dark:bg-darkbg/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 transition-colors duration-500 border-b border-gray-100 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 font-bold text-xl tracking-tight text-blue-600 dark:text-blue-400">
+                <div class="flex-shrink-0 font-bold text-lg sm:text-xl tracking-tight text-blue-600 dark:text-blue-400">
                     <span class="ar">ياسين غريسي</span>
                     <span class="en">Yacine Ghrissi</span>
                 </div>
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2 sm:gap-3">
                     <!-- Theme Toggle -->
-                    <button onclick="toggleTheme()" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors text-gray-600 dark:text-yellow-400">
-                        <i class="fas fa-moon dark:hidden"></i>
-                        <i class="fas fa-sun hidden dark:block"></i>
+                    <button onclick="toggleTheme()" class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors text-gray-600 dark:text-yellow-400">
+                        <i class="fas fa-moon dark:hidden text-sm sm:text-base"></i>
+                        <i class="fas fa-sun hidden dark:block text-sm sm:text-base"></i>
                     </button>
                     <!-- Language Toggle -->
-                    <button onclick="toggleLanguage()" class="px-4 py-2 rounded-md bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 font-semibold transition-colors">
+                    <button onclick="toggleLanguage()" class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-md bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 font-semibold transition-colors text-sm sm:text-base">
                         <span class="ar">English</span>
                         <span class="en">العربية</span>
                     </button>
@@ -87,30 +87,30 @@
 
     <!-- Hero Section -->
     <section class="pt-32 pb-20 px-4 min-h-screen flex items-center bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-darkbg dark:via-darkbg dark:to-slate-800/50 transition-colors duration-500">
-        <div class="max-w-7xl mx-auto text-center">
+        <div class="max-w-7xl mx-auto text-center w-full">
             <div class="inline-block mb-4 p-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 floating-element" data-aos="fade-down">
-                <i class="fa-solid fa-code text-3xl"></i>
+                <i class="fa-solid fa-code text-2xl sm:text-3xl"></i>
             </div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up" data-aos-delay="100">
-                <span class="ar">مرحباً، أنا <span class="gradient-text">ياسين غريسي</span></span>
-                <span class="en">Hi, I'm <span class="gradient-text">Yacine Ghrissi</span></span>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up" data-aos-delay="100">
+                <span class="ar">مرحباً، أنا <br class="block sm:hidden"><span class="gradient-text mt-2 inline-block">ياسين غريسي</span></span>
+                <span class="en">Hi, I'm <br class="block sm:hidden"><span class="gradient-text mt-2 inline-block">Yacine Ghrissi</span></span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                 <span class="ar">مهندس إعلام آلي | مطور فلاتر (Flutter) | مدير مشاريع</span>
                 <span class="en">Computer Engineer | Flutter Developer | Project Manager</span>
             </p>
-            <p class="text-lg text-gray-500 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+            <p class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed px-2" data-aos="fade-up" data-aos-delay="300">
                 <span class="ar">أكثر من 4 سنوات من الخبرة في تطوير تطبيقات الهواتف المحمولة وتطبيقات الويب، وإدارة الفرق التقنية لتطوير حلول رقمية مبتكرة تلبي احتياجات السوق.</span>
                 <span class="en">Over 4 years of experience in mobile and web application development, and leading technical teams to create innovative digital solutions tailored to market needs.</span>
             </p>
-            <div class="flex justify-center gap-4 flex-wrap" data-aos="zoom-in" data-aos-delay="400">
-                <a href="#contact" class="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-500/30">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 sm:px-0" data-aos="zoom-in" data-aos-delay="400">
+                <a href="#contact" class="w-full sm:w-auto text-center px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-500/30">
                     <span class="ar">تواصل معي</span>
                     <span class="en">Contact Me</span>
                 </a>
-                <a href="My CV.pdf" target="_blank" class="px-8 py-3 bg-white dark:bg-transparent text-blue-600 dark:text-blue-400 border border-blue-600 dark:border-blue-400 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:scale-105 transition-all shadow-sm flex items-center gap-2">
+                <a href="My CV.pdf" target="_blank" class="w-full sm:w-auto justify-center px-8 py-3 bg-white dark:bg-transparent text-blue-600 dark:text-blue-400 border border-blue-600 dark:border-blue-400 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:scale-105 transition-all shadow-sm flex items-center gap-2">
                     <i class="fas fa-file-pdf"></i>
-                    <span class="ar">عرض السيرة الذاتية (CV)</span>
+                    <span class="ar">عرض السيرة الذاتية</span>
                     <span class="en">View CV</span>
                 </a>
             </div>
@@ -119,26 +119,26 @@
 
     <!-- About Section -->
     <section class="py-20 bg-white dark:bg-darkcard transition-colors duration-500" id="about">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-3">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8">
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">
                     <span class="ar">نبذة عني</span>
                     <span class="en">About Me</span>
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-left">
+            <div class="grid md:grid-cols-2 gap-10 sm:gap-12 items-center">
+                <div data-aos="fade-left" class="order-2 md:order-1">
                     <div class="relative p-2 rounded-2xl bg-gradient-to-tr from-blue-500 to-purple-500">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Developer Workspace" class="rounded-xl shadow-xl w-full">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Developer Workspace" class="rounded-xl shadow-xl w-full object-cover h-64 sm:h-auto">
                     </div>
                 </div>
-                <div class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-6" data-aos="fade-right">
+                <div class="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-5 sm:space-y-6 order-1 md:order-2 text-justify md:text-right" data-aos="fade-right">
                     <p class="ar">أنا مطور فلاتر ومدير مشاريع أعمل حالياً في شركة Hoskadev. أتخصص في تحليل المتطلبات، تصميم واجهات المستخدم (UI/UX)، تحسين الأداء، والإشراف التقني الشامل على المشاريع.</p>
                     <p class="ar">لدي خبرة واسعة في استخدام Flutter, Firebase, REST APIs وأدوات إدارة الحالة مثل GetX و BLoC و Provider. أحمل شهادة الماستر في الأنظمة الموزعة والذكاء الاصطناعي من جامعة الشهيد حمه لخضر بالوادي.</p>
                     
-                    <p class="en">I am a Flutter developer and project manager currently working at Hoskadev. I specialize in requirement analysis, UI/UX design, performance optimization, and comprehensive project supervision.</p>
-                    <p class="en">I have extensive expertise in Flutter, Firebase, REST APIs, and state management tools like GetX, BLoC, and Provider. I hold a Master's degree in Distributed Systems and Artificial Intelligence from Echahid Hamma Lakhdar University, El Oued.</p>
+                    <p class="en text-left">I am a Flutter developer and project manager currently working at Hoskadev. I specialize in requirement analysis, UI/UX design, performance optimization, and comprehensive project supervision.</p>
+                    <p class="en text-left">I have extensive expertise in Flutter, Firebase, REST APIs, and state management tools like GetX, BLoC, and Provider. I hold a Master's degree in Distributed Systems and Artificial Intelligence from Echahid Hamma Lakhdar University, El Oued.</p>
                 </div>
             </div>
         </div>
@@ -146,55 +146,55 @@
 
     <!-- Skills Section -->
     <section class="py-20 bg-gray-50/50 dark:bg-darkbg transition-colors duration-500" id="skills">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">
                     <span class="ar">المهارات التقنية</span>
                     <span class="en">Technical Skills</span>
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
                 <!-- Skill 1 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="50">
-                    <i class="fa-brands fa-flutter text-5xl text-blue-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">Flutter & Dart</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="50">
+                    <i class="fa-brands fa-flutter text-4xl sm:text-5xl text-blue-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">Flutter & Dart</h3>
                 </div>
                 <!-- Skill 2 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fa-brands fa-java text-5xl text-red-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">Java / Kotlin / Swift</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-brands fa-java text-4xl sm:text-5xl text-red-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">Java / Kotlin / Swift</h3>
                 </div>
                 <!-- Skill 3 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="150">
-                    <i class="fa-solid fa-fire text-5xl text-yellow-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">Firebase & Cloud APIs</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="fa-solid fa-fire text-4xl sm:text-5xl text-yellow-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">Firebase & Cloud APIs</h3>
                 </div>
                 <!-- Skill 4 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fa-solid fa-sitemap text-5xl text-green-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">GetX & BLoC Pattern</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-sitemap text-4xl sm:text-5xl text-green-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">GetX & BLoC</h3>
                 </div>
                 <!-- Skill 5 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="250">
-                    <i class="fa-brands fa-php text-5xl text-indigo-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">PHP & Python</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="250">
+                    <i class="fa-brands fa-php text-4xl sm:text-5xl text-indigo-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">PHP & Python</h3>
                 </div>
                 <!-- Skill 6 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fa-solid fa-server text-5xl text-gray-600 dark:text-gray-400 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">RESTful APIs</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-server text-4xl sm:text-5xl text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">RESTful APIs</h3>
                 </div>
                 <!-- Skill 7 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="350">
-                    <i class="fa-solid fa-list-check text-5xl text-teal-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200 ar">إدارة المشاريع</h3>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200 en">Project Management</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="350">
+                    <i class="fa-solid fa-list-check text-4xl sm:text-5xl text-teal-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200 ar">إدارة المشاريع</h3>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200 en">Project Management</h3>
                 </div>
                 <!-- Skill 8 -->
-                <div class="bg-white dark:bg-darkcard p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="400">
-                    <i class="fa-solid fa-pen-nib text-5xl text-pink-500 mb-4 drop-shadow-md"></i>
-                    <h3 class="font-bold text-gray-800 dark:text-gray-200">UI / UX Design</h3>
+                <div class="bg-white dark:bg-darkcard p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-pen-nib text-4xl sm:text-5xl text-pink-500 mb-3 sm:mb-4 drop-shadow-md"></i>
+                    <h3 class="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-200">UI / UX Design</h3>
                 </div>
             </div>
         </div>
@@ -202,28 +202,28 @@
 
     <!-- Projects Section -->
     <section class="py-20 bg-white dark:bg-darkcard transition-colors duration-500" id="projects">
-        <div class="max-w-7xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
             
             <!-- Developed Apps -->
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-3">
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">
                     <span class="ar">تطبيقات أنجزتها</span>
                     <span class="en">Developed Applications</span>
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-20">
                 <!-- App 1: Winek VTC -->
                 <div class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fas fa-map-location-dot"></i></div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Winek VTC</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm h-28 overflow-hidden leading-relaxed">
+                    <div class="p-5 sm:p-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4"><i class="fas fa-map-location-dot"></i></div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Winek VTC</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm h-24 sm:h-28 overflow-hidden leading-relaxed">
                             <span class="ar">تطبيق متكامل لخدمات النقل وحجز سيارات الأجرة. يتميز بنظام متقدم لتتبع مسارات وإحداثيات السائقين بشكل مباشر لضمان أفضل تجربة للمستخدم.</span>
                             <span class="en">An integrated VTC and ride-hailing app featuring precise real-time driver coordinate tracking and routing for an optimal user experience.</span>
                         </p>
-                        <a href="https://play.google.com/store/search?q=winek+vtc&c=apps&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2">
+                        <a href="https://play.google.com/store/search?q=winek+vtc&c=apps&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
                         </a>
                     </div>
@@ -231,14 +231,14 @@
 
                 <!-- App 2: Echela -->
                 <div class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fas fa-truck-fast"></i></div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Echela (الشيلة)</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm h-28 overflow-hidden leading-relaxed">
+                    <div class="p-5 sm:p-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4"><i class="fas fa-truck-fast"></i></div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Echela (الشيلة)</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm h-24 sm:h-28 overflow-hidden leading-relaxed">
                             <span class="ar">تطبيق متخصص في خدمات النقل واللوجستيات. مصمم بآلية عمل مختلفة حيث لا يعتمد على تتبع إحداثيات السائقين، مما يوفر تجربة مخصصة لبيئة العمل.</span>
                             <span class="en">A specialized transport and logistics app designed with a unique operational model that does not track driver coordinates, offering a tailored workflow.</span>
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.hoska.echela&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2">
+                        <a href="https://play.google.com/store/apps/details?id=com.hoska.echela&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
                         </a>
                     </div>
@@ -246,14 +246,14 @@
 
                 <!-- App 3: GROLINE -->
                 <div class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fas fa-cart-shopping"></i></div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">GROLINE</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm h-28 overflow-hidden leading-relaxed">
+                    <div class="p-5 sm:p-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4"><i class="fas fa-cart-shopping"></i></div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">GROLINE</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm h-24 sm:h-28 overflow-hidden leading-relaxed">
                             <span class="ar">منصة إلكترونية شاملة للتسوق وتلبية الاحتياجات اليومية، تشمل الإلكترونيات وأدوات البناء والترصيص، مع خدمة توصيل ونظام عروض متكامل.</span>
                             <span class="en">Comprehensive e-commerce platform for daily needs, electronics, and hardware, featuring order management, delivery logistics, and promotions.</span>
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.app.groline&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2">
+                        <a href="https://play.google.com/store/apps/details?id=com.app.groline&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
                         </a>
                     </div>
@@ -261,14 +261,14 @@
 
                 <!-- App 4: FreshDz -->
                 <div class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fa-brands fa-apple"></i></div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">FreshDz</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm h-28 overflow-hidden leading-relaxed">
+                    <div class="p-5 sm:p-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4"><i class="fa-brands fa-apple"></i></div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">FreshDz</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm h-24 sm:h-28 overflow-hidden leading-relaxed">
                             <span class="ar">نسخة نظام iOS المخصصة للتجارة الإلكترونية، توفر تجربة مستخدم سلسة وعملية للمستخدمين على أجهزة أبل.</span>
                             <span class="en">The iOS version for e-commerce, offering a seamless native shopping experience for Apple device users.</span>
                         </p>
-                        <a href="https://apps.apple.com/dz/app/fresh-dz-%D9%81%D8%B1%D8%A7%D8%B4-%D8%AF%D9%8A%D8%B2%D8%A7%D8%AF/id6744602129" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2">
+                        <a href="https://apps.apple.com/dz/app/fresh-dz-%D9%81%D8%B1%D8%A7%D8%B4-%D8%AF%D9%8A%D8%B2%D8%A7%D8%AF/id6744602129" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-brands fa-apple"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
                         </a>
                     </div>
@@ -276,14 +276,14 @@
 
                 <!-- App 5: Maurizon -->
                 <div class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fas fa-store"></i></div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Maurizon</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm h-28 overflow-hidden leading-relaxed">
+                    <div class="p-5 sm:p-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4"><i class="fas fa-store"></i></div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Maurizon</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm h-24 sm:h-28 overflow-hidden leading-relaxed">
                             <span class="ar">تطبيق تسوق إلكتروني متكامل يقدم خدمات البيع والشراء بواجهة عملية وسهلة الاستخدام.</span>
                             <span class="en">An integrated online shopping application providing seamless buying and selling experiences.</span>
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.mauritania.shop&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2">
+                        <a href="https://play.google.com/store/apps/details?id=com.mauritania.shop&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
                         </a>
                     </div>
@@ -291,14 +291,14 @@
 
                 <!-- App 6: Hariri App -->
                 <div class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 card-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-400 rounded-xl flex items-center justify-center text-2xl mb-4"><i class="fas fa-mobile-screen-button"></i></div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Hariri App</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm h-28 overflow-hidden leading-relaxed">
+                    <div class="p-5 sm:p-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-400 rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4"><i class="fas fa-mobile-screen-button"></i></div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Hariri App</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm h-24 sm:h-28 overflow-hidden leading-relaxed">
                             <span class="ar">تطبيق تفاعلي مصمم لتسهيل الخدمات المخصصة للمستخدمين بأداء عالٍ وتصميم متجاوب.</span>
                             <span class="en">An interactive application designed to facilitate dedicated user services with high performance and responsive design.</span>
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.hariri.app&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2">
+                        <a href="https://play.google.com/store/apps/details?id=com.hariri.app&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 font-semibold inline-flex items-center gap-2 text-sm sm:text-base">
                             <i class="fa-brands fa-google-play"></i> <span class="ar">عرض التطبيق</span><span class="en">View App</span>
                         </a>
                     </div>
@@ -306,62 +306,62 @@
             </div>
 
             <!-- Maintained Apps -->
-            <div class="text-center mb-16 mt-20" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-3">
-                    <span class="ar">تطبيقات أشرفت على صيانتها ودعمها تقنياً</span>
-                    <span class="en">Apps I Maintained & Supported</span>
+            <div class="text-center mb-12 sm:mb-16 mt-20" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                    <span class="ar">تطبيقات دعمتها تقنياً</span>
+                    <span class="en">Maintained Apps</span>
                 </h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
                 <!-- M App 1 -->
-                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex items-start gap-5 card-hover" data-aos="fade-right">
-                    <div class="bg-green-100 dark:bg-green-900/40 p-4 rounded-xl text-green-600 dark:text-green-400 text-2xl shrink-0"><i class="fas fa-graduation-cap"></i></div>
+                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-5 sm:p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col sm:flex-row items-start gap-4 sm:gap-5 card-hover" data-aos="fade-up">
+                    <div class="bg-green-100 dark:bg-green-900/40 p-3 sm:p-4 rounded-xl text-green-600 dark:text-green-400 text-xl sm:text-2xl shrink-0"><i class="fas fa-graduation-cap"></i></div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Nadjiib (نجيب)</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
-                            <span class="ar">تطبيق تعليمي مبتكر لطلاب المراحل الثلاث (ابتدائي، متوسط، ثانوي) يقدم دورات تفاعلية ومميزات لتعزيز الاستفادة التعليمية.</span>
-                            <span class="en">Innovative educational app for primary, middle, and high school students offering interactive courses and features.</span>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Nadjiib (نجيب)</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed">
+                            <span class="ar">تطبيق تعليمي مبتكر لطلاب المراحل الثلاث يقدم دورات تفاعلية ومميزات لتعزيز الاستفادة التعليمية.</span>
+                            <span class="en">Innovative educational app for students offering interactive courses and features.</span>
                         </p>
                         <a href="https://play.google.com/store/apps/details?id=com.najiibcom.najiib&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 font-semibold text-sm inline-flex items-center gap-1"><i class="fa-brands fa-google-play"></i> الرابط</a>
                     </div>
                 </div>
 
                 <!-- M App 2 -->
-                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex items-start gap-5 card-hover" data-aos="fade-left">
-                    <div class="bg-blue-100 dark:bg-blue-900/40 p-4 rounded-xl text-blue-600 dark:text-blue-400 text-2xl shrink-0"><i class="fas fa-stethoscope"></i></div>
+                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-5 sm:p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col sm:flex-row items-start gap-4 sm:gap-5 card-hover" data-aos="fade-up">
+                    <div class="bg-blue-100 dark:bg-blue-900/40 p-3 sm:p-4 rounded-xl text-blue-600 dark:text-blue-400 text-xl sm:text-2xl shrink-0"><i class="fas fa-stethoscope"></i></div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Labbaass (لباس)</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Labbaass (لباس)</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed">
                             <span class="ar">تطبيق طبي لحجز المواعيد في العيادات، يسهل التواصل بين المرضى والأطباء وفق أعلى معايير الخصوصية.</span>
-                            <span class="en">Medical application for clinic appointment booking, facilitating communication between patients and doctors securely.</span>
+                            <span class="en">Medical application for clinic appointment booking, facilitating secure communication.</span>
                         </p>
                         <a href="https://play.google.com/store/apps/details?id=com.hoska.labbaass&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 font-semibold text-sm inline-flex items-center gap-1"><i class="fa-brands fa-google-play"></i> الرابط</a>
                     </div>
                 </div>
 
                 <!-- M App 3 -->
-                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex items-start gap-5 card-hover" data-aos="fade-right">
-                    <div class="bg-yellow-100 dark:bg-yellow-900/40 p-4 rounded-xl text-yellow-600 dark:text-yellow-500 text-2xl shrink-0"><i class="fas fa-seedling"></i></div>
+                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-5 sm:p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col sm:flex-row items-start gap-4 sm:gap-5 card-hover" data-aos="fade-up">
+                    <div class="bg-yellow-100 dark:bg-yellow-900/40 p-3 sm:p-4 rounded-xl text-yellow-600 dark:text-yellow-500 text-xl sm:text-2xl shrink-0"><i class="fas fa-seedling"></i></div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Agropole</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
-                            <span class="ar">منصة رقمية تربط أطراف سلسلة التوريد (مزارعين، مصانع، تجار، مواطنين) لتسهيل شراء وتوزيع المنتجات وإدارة الطلبات بديهياً.</span>
-                            <span class="en">Digital platform connecting the supply chain (farmers, factories, merchants) to facilitate local trade and order management.</span>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Agropole</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed">
+                            <span class="ar">منصة رقمية تربط أطراف سلسلة التوريد لتسهيل شراء وتوزيع المنتجات وإدارة الطلبات بديهياً.</span>
+                            <span class="en">Digital platform connecting the supply chain to facilitate local trade and order management.</span>
                         </p>
                         <a href="https://play.google.com/store/apps/details?id=com.agropole.agropole&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 font-semibold text-sm inline-flex items-center gap-1"><i class="fa-brands fa-google-play"></i> الرابط</a>
                     </div>
                 </div>
 
                 <!-- M App 4 -->
-                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex items-start gap-5 card-hover" data-aos="fade-left">
-                    <div class="bg-purple-100 dark:bg-purple-900/40 p-4 rounded-xl text-purple-600 dark:text-purple-400 text-2xl shrink-0"><i class="fas fa-car-side"></i></div>
+                <div class="bg-gray-50 dark:bg-slate-800/30 rounded-2xl p-5 sm:p-6 shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col sm:flex-row items-start gap-4 sm:gap-5 card-hover" data-aos="fade-up">
+                    <div class="bg-purple-100 dark:bg-purple-900/40 p-3 sm:p-4 rounded-xl text-purple-600 dark:text-purple-400 text-xl sm:text-2xl shrink-0"><i class="fas fa-car-side"></i></div>
                     <div>
-                        <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Cara (كارا)</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
-                            <span class="ar">تطبيق لحجز مواعيد غسيل السيارات المتنقل في السعودية بخطوات بسيطة (خريطة، وقت، نوع الغسيل، دفع إلكتروني).</span>
-                            <span class="en">Mobile car wash booking app in Saudi Arabia featuring map localization, scheduling, and integrated payment gateways.</span>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white">Cara (كارا)</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed">
+                            <span class="ar">تطبيق لحجز مواعيد غسيل السيارات المتنقل في السعودية بخطوات بسيطة مع دفع إلكتروني.</span>
+                            <span class="en">Mobile car wash booking app in Saudi Arabia featuring scheduling and integrated payments.</span>
                         </p>
                         <a href="https://play.google.com/store/apps/details?id=com.hoskateam.cara&hl=ar" target="_blank" class="text-blue-600 dark:text-blue-400 font-semibold text-sm inline-flex items-center gap-1"><i class="fa-brands fa-google-play"></i> الرابط</a>
                     </div>
@@ -372,53 +372,54 @@
 
     <!-- Contact Section -->
     <section class="py-20 bg-gray-900 dark:bg-[#020617] text-white transition-colors duration-500" id="contact">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3">
                     <span class="ar">تواصل معي</span>
                     <span class="en">Get In Touch</span>
                 </h2>
                 <div class="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
-                <p class="mt-6 text-gray-400 max-w-xl mx-auto text-lg">
+                <p class="mt-4 sm:mt-6 text-gray-400 max-w-xl mx-auto text-base sm:text-lg">
                     <span class="ar">هل لديك مشروع أو فرصة عمل؟ أنا جاهز لتحويل أفكارك إلى واقع رقمي.</span>
                     <span class="en">Have a project or job opportunity? I'm ready to turn your ideas into digital reality.</span>
                 </p>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-6">
+            <!-- Changed to Grid for perfect Mobile Responsiveness -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
                 <!-- WhatsApp -->
-                <a href="https://wa.me/213542288040?s=t" target="_blank" class="flex flex-col items-center p-8 bg-gray-800/80 rounded-2xl hover:bg-green-600 hover:-translate-y-2 transition-all w-48 text-center border border-gray-700 hover:border-green-500" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fa-brands fa-whatsapp text-5xl mb-4 text-green-400 group-hover:text-white"></i>
-                    <h4 class="font-bold mb-2">WhatsApp</h4>
-                    <span class="text-sm text-gray-300 dir-ltr">+213 542 28 80 40</span>
+                <a href="https://wa.me/213542288040?s=t" target="_blank" class="flex flex-col items-center p-6 sm:p-8 bg-gray-800/80 rounded-2xl hover:bg-green-600 hover:-translate-y-2 transition-all w-full text-center border border-gray-700 hover:border-green-500 group" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-brands fa-whatsapp text-4xl sm:text-5xl mb-3 sm:mb-4 text-green-400 group-hover:text-white"></i>
+                    <h4 class="font-bold mb-1 sm:mb-2">WhatsApp</h4>
+                    <span class="text-xs sm:text-sm text-gray-300 dir-ltr">+213 542 28 80 40</span>
                 </a>
 
                 <!-- Phone -->
-                <a href="tel:+213696365741" class="flex flex-col items-center p-8 bg-gray-800/80 rounded-2xl hover:bg-blue-600 hover:-translate-y-2 transition-all w-48 text-center border border-gray-700 hover:border-blue-500" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fa-solid fa-phone text-5xl mb-4 text-blue-400"></i>
-                    <h4 class="font-bold mb-2">Phone</h4>
-                    <span class="text-sm text-gray-300 dir-ltr">+213 696 36 57 41</span>
+                <a href="tel:+213696365741" class="flex flex-col items-center p-6 sm:p-8 bg-gray-800/80 rounded-2xl hover:bg-blue-600 hover:-translate-y-2 transition-all w-full text-center border border-gray-700 hover:border-blue-500 group" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-phone text-4xl sm:text-5xl mb-3 sm:mb-4 text-blue-400 group-hover:text-white"></i>
+                    <h4 class="font-bold mb-1 sm:mb-2">Phone</h4>
+                    <span class="text-xs sm:text-sm text-gray-300 dir-ltr">+213 696 36 57 41</span>
                 </a>
 
                 <!-- Email -->
-                <a href="mailto:yacine.ghrissi@gmail.com" class="flex flex-col items-center p-8 bg-gray-800/80 rounded-2xl hover:bg-red-500 hover:-translate-y-2 transition-all w-48 text-center border border-gray-700 hover:border-red-500" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fa-solid fa-envelope text-5xl mb-4 text-red-400"></i>
-                    <h4 class="font-bold mb-2">Email</h4>
-                    <span class="text-sm text-gray-300 text-xs">yacine.ghrissi@gmail.com</span>
+                <a href="mailto:yacine.ghrissi@gmail.com" class="flex flex-col items-center p-6 sm:p-8 bg-gray-800/80 rounded-2xl hover:bg-red-500 hover:-translate-y-2 transition-all w-full text-center border border-gray-700 hover:border-red-500 group" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-envelope text-4xl sm:text-5xl mb-3 sm:mb-4 text-red-400 group-hover:text-white"></i>
+                    <h4 class="font-bold mb-1 sm:mb-2">Email</h4>
+                    <span class="text-xs sm:text-sm text-gray-300">yacine.ghrissi@gmail.com</span>
                 </a>
 
                 <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/yacine-ghrissi-ba5290365" target="_blank" class="flex flex-col items-center p-8 bg-gray-800/80 rounded-2xl hover:bg-blue-700 hover:-translate-y-2 transition-all w-48 text-center border border-gray-700 hover:border-blue-600" data-aos="zoom-in" data-aos-delay="400">
-                    <i class="fa-brands fa-linkedin text-5xl mb-4 text-blue-400"></i>
-                    <h4 class="font-bold mb-2">LinkedIn</h4>
-                    <span class="text-sm text-gray-300">Yacine Ghrissi</span>
+                <a href="https://www.linkedin.com/in/yacine-ghrissi-ba5290365" target="_blank" class="flex flex-col items-center p-6 sm:p-8 bg-gray-800/80 rounded-2xl hover:bg-blue-700 hover:-translate-y-2 transition-all w-full text-center border border-gray-700 hover:border-blue-600 group" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-brands fa-linkedin text-4xl sm:text-5xl mb-3 sm:mb-4 text-blue-400 group-hover:text-white"></i>
+                    <h4 class="font-bold mb-1 sm:mb-2">LinkedIn</h4>
+                    <span class="text-xs sm:text-sm text-gray-300">Yacine Ghrissi</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-8 text-center text-gray-500 text-sm">
+    <footer class="bg-black py-6 sm:py-8 text-center text-gray-500 text-xs sm:text-sm">
         <p>
             &copy; <span id="year"></span> 
             <span class="ar">ياسين غريسي. جميع الحقوق محفوظة.</span>
@@ -433,7 +434,7 @@
         AOS.init({
             duration: 800,
             once: true,
-            offset: 100
+            offset: 50 // Trigger slightly earlier on mobile
         });
 
         // Set current year
@@ -454,7 +455,6 @@
         // Dark Mode Toggle
         function toggleTheme() {
             document.documentElement.classList.toggle('dark');
-            // Optional: Save preference to localStorage here if you want it to persist across reloads
         }
     </script>
 </body>
